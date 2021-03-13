@@ -1,97 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
+
 body {
-  /* change this for background image */
-  background-image: url("../img/bg.png");
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  margin: auto;
-  overflow-x: hidden;
+  font-family: 'Barlow Condensed', sans-serif;
+  background-color: #363636;
 }
 
-
-/* Header Css */
-.head {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+li a {
+  color: antiquewhite;
 }
 
-.head h1{
-  color: white;
-  font-size: 5rem;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.head p {
-  color: white;
-  font-size: 2rem;
-  margin-top: 0px;
-}
-
-/* pfp img css */
-.head img {
-  border-radius: 100%;
-  max-width: 50%;
-  height: auto;
-  border-style: solid;
-  border-color: white;
-  border-width: 5px;
-  margin-top: 200px;
-}
-
-.header {
-  background-color: none;
-  color: #ffffff;
-  padding: 15px;
-}
-/* Span for fa icons */
-span {
-  padding: 20px;
+.logo {
+  color: antiquewhite;
   font-size: 30px;
-  width: auto;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
+  margin-left: 10px;
+  margin-top: 18px;
 }
 
-/* font awesome buttons */
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: auto;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
+.branding {
+  display: flex;
+  flex-direction: row;
 }
 
-.fa:hover {
-  -webkit-transform: translateY(-5px);
-  transform: translateY(-5px);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform, opacity;
-  transition-property: transform, opacity;
+.branding .logo:hover {
+  color: cadetblue;
 }
 
-.fa-twitter {
-background: #55ACEE;
-color: white;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 3%;
 }
 
-.fa-youtube {
-  background: #bb0000;
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+.nav-links li a {
+  font-size: 21px;
+  text-transform: uppercase;
+}
+
+.nav-links li a #icon {
   color: white;
 }
 
-.fa-instagram {
-background: #125688;
-color: white;
+.nav-links li a:hover {
+  color: cadetblue;
+}
+
+.nav-links li a:hover #icon {
+  color: rgb(0, 252, 198);
+}
+
+.m-columns {
+  margin-top: 150px;
+}
+.hero {
+  font-size: 30px;
+}
+
+section {
+  background-color: rgb(0, 252, 198);
+}
+
+section p {
+  color: #363636;
+  font-size: 22;
+  text-align: center;
+}
+
+section #feather {
+  color: white;
 }
